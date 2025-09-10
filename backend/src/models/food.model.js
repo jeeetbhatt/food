@@ -12,7 +12,7 @@ const foodSchema = mongoose.Schema({
     desc: String,
     foodPartner: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "foodPartner",
+        ref: foodPartnerModel
     }
 });
 
