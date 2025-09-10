@@ -1,5 +1,3 @@
-import foodPartnerModel from "./foodPartner.model";
-
 const mongoose = require('mongoose');
 
 const foodSchema = mongoose.Schema({
@@ -14,8 +12,8 @@ const foodSchema = mongoose.Schema({
     desc: String,
     foodPartner: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: foodPartnerModel
+        ref: "foodPartner",
     }
 });
 
-module.exports =  mongoose.model('food', foodSchema);;
+module.exports =  mongoose.model('food', foodSchema);
