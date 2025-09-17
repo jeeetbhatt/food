@@ -22,7 +22,7 @@ const FoodPartnerLogin = () => {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Enter password" />
         </div>
-        <button type="submit" className="btn-primary">Login</button>
+        <button type="submit" className="btn-primary">Login AC</button>
       </form>
 
       <div className="switch-auth">
