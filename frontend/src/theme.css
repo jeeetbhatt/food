@@ -1,0 +1,24 @@
+:root {
+  --color-bg-light: #f9f9f9;
+  --color-bg-dark: #181818;
+  --color-text-light: #181818;
+  --color-text-dark: #f9f9f9;
+  --color-primary: #4f8cff;
+  --color-border: #e0e0e0;
+  --color-input-bg: #fff;
+  --color-input-bg-dark: #232323;
+  --color-input-border: #cccccc;
+  --border-radius: 10px;
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+[data-theme="dark"] {
+  --color-bg-light: #181818;
+  --color-bg-dark: #f9f9f9;
+  --color-text-light: #f9f9f9;
+  --color-text-dark: #181818;
+  --color-input-bg: #232323;
+  --color-input-bg-dark: #fff;
+}
