@@ -1,0 +1,145 @@
+/* FoodPartnerLogin page styles */
+.foodpartner-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-light);
+  transition: background var(--transition);
+}
+
+html[data-theme="dark"] .foodpartner-login-container {
+  background: var(--color-bg-dark);
+}
+
+.foodpartner-login-form {
+  background: var(--color-input-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2.5rem 2rem 2rem 2rem;
+  border: 1px solid var(--color-border);
+  min-width: 320px;
+  transition: background var(--transition), color var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+html[data-theme="dark"] .foodpartner-login-form {
+  background: var(--color-input-bg-dark);
+  border-color: #333;
+}
+
+.foodpartner-login-form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--color-text-light);
+  transition: color var(--transition);
+}
+
+html[data-theme="dark"] .foodpartner-login-form h2 {
+  color: var(--color-text-dark);
+}
+
+.foodpartner-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.foodpartner-input-group label {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+html[data-theme="dark"] .foodpartner-input-group label {
+  color: var(--color-text-dark);
+}
+
+.foodpartner-input-group input {
+  padding: 0.7rem 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-input-border);
+  background: var(--color-input-bg);
+  color: var(--color-text-light);
+  font-size: 1rem;
+  outline: none;
+  transition: border var(--transition), background var(--transition), color var(--transition);
+}
+
+html[data-theme="dark"] .foodpartner-input-group input {
+  background: var(--color-input-bg-dark);
+  color: var(--color-text-dark);
+  border-color: #444;
+}
+
+.foodpartner-login-form button {
+  margin-top: 0.5rem;
+  padding: 0.8rem 0;
+  border-radius: var(--border-radius);
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.foodpartner-login-form button:hover {
+  background: #3566b8;
+}
+
+/* Switch link/button styling and alignment fixes */
+.switch-auth {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+/* Ensure form + switch stack nicely on small screens */
+.foodpartner-login-container {
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.foodpartner-login-form {
+  width: 100%;
+  max-width: 420px;
+}
+
+@media (max-width: 600px) {
+  .foodpartner-login-container {
+    padding: 1rem;
+  }
+
+  .foodpartner-login-form {
+    width: 100%;
+    padding: 1.2rem;
+    min-width: auto;
+  }
+
+  .role-toggle {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+  }
+}
